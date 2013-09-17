@@ -1,0 +1,121 @@
+.clear{
+    clear:both;
+}
+#header{
+    height: 100px;
+    background-color: #F4F4F4;
+    border-bottom: solid 1px;
+    border-color: #D3D3D3;
+    /*border-image: url(../img/headerBorder.png) 100% repeat;*/
+}
+#main{
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#addButton{
+    margin-top: 56px;
+    margin-left: 50px;
+    cursor: pointer;
+    float: left;
+    width: 80px;
+    height: 26px;
+    background-image: url(../img/addButton.png);
+}
+#refreshButton{
+    margin-top: 56px;
+    margin-left: 10px;
+    cursor: pointer;
+    float: left;
+    width: 80px;
+    height: 26px;
+    background-image: url(../img/refreshButton.png);
+}
+#searchField{
+    margin-top: 56px;
+    margin-right: 50px;
+    float: right;
+}
+#searchIcon{
+    float: left;
+    width: 35px;
+    height: 24px;
+    background-image: url(../img/searchIcon.png);
+}
+#searchField input{
+    width: 200px;
+    height: 20px;
+    border-radius: 4px;
+}
+#monthNav{
+    padding-bottom: 13px;
+}
+#prevMonthButton{
+    cursor: pointer;
+    float: left;
+    width: 17px;
+    height: 17px;
+    background-image: url(../img/prevMonthButton.png);
+}
+#monthTitle{
+    font-weight:bold;
+    font-size: 20px;
+    float: left;
+    margin-left: 9px;
+    margin-right: 9px;
+}
+#nextMonthButton{
+    cursor: pointer;
+    float: left;
+    width: 17px;
+    height: 17px;
+    background-image: url(../img/nextMonthButton.png);
+}
+#todayButton{
+    cursor: pointer;
+    float: left;
+    margin-left: 9px;
+    width: 57px;
+    height: 17px;
+    background-image: url(../img/todayButton.png);
+}
+#calendar{
+    margin-top: 13px;
+    border: solid 1px #EBEBEB;
+    overflow: auto;
+}
+.day{
+    cursor: pointer;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 14.2857%;
+    height: 150px;
+    border: solid 1px #EBEBEB;
+    float: left;
+}
+.date{
+    color: #999999;
+    font-weight:bold;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+.event{
+    color: #666666;
+    font-weight:bold;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+.today{
+    background-color: #F4F4F4;
+}
+.selected{
+    border: solid 1px #8ABFE9;
+    background-color: #E5F1F9;
+}
+.withEvent{
+    background-color: #C2E4FE;
+}
+#footer{
+    margin-top: 65px;
+}
