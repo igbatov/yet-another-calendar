@@ -62,10 +62,11 @@ MYAPP.calendarHelper = {
    * @returns {String} - date in a yyyy-mm-dd format
    */
   normalizeStrDate: function(date){
-    var d = new Date(date),
+    var d = new Date(date.replace(/-/g, '/')), //replace - with / for IE correct work
       yyyy = d.getFullYear().toString(),
       mm = (d.getMonth()+1).toString(), // getMonth() is zero-based
       dd  = d.getDate().toString();
+    console.log(d);
     return yyyy + '-' + (mm[1]?mm:"0"+mm[0]) + '-' + (dd[1]?dd:"0"+dd[0]);
   }
 };
